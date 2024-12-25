@@ -1,48 +1,90 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import React, { useState, useEffect } from "react";
+
+const generateOrangeShades = (length) => {
+  const shades = [];
+  const maxShades = 100; // Prevent excessive shades
+  const actualLength = Math.min(length, maxShades);
+  for (let i = 0; i < actualLength; i++) {
+    const shade = Math.floor((255 / actualLength) * i);
+    shades.push(`rgb(255, ${shade}, 0)`);
+  }
+  return shades;
+};
 
 const Hero = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(100);
+  const toRotate = [
+    "Comp Sci Student (unfortunately)",
+    "Avid fortnite player",
+    "",
+    "Comedian (my true passion)",
+    "Botanical Garden",
+    "High XP individual",
+    "Affa this website mad now??",
+    "🦅🦅🦅",
+    "🤫🧏‍♂️",
+  ];
+  const period = 1500;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text, delta]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(100);
+    }
+  };
+
+  const shadesOfOrange = generateOrangeShades(text.length);
+
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
+    <section className="relative w-full mx-auto bg-primary min-h-screen flex items-center justify-center px-4">
+      <div className="max-w-7xl mx-auto flex flex-col items-start gap-5">
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Osaze</span>
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-secondary">
+            Wagwan!!, I'm <span className="text-secondary">Osaze</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am trying to make a portfolio website <br className='sm:block hidden' />
-      
-          </p>
+          <span
+            className="typing text-secondary"
+            style={{ fontSize: "clamp(16px, 4.3vw, 32px)" }}
+          >
+            {text.split("").map((char, index) => (
+              <span key={index} style={{ color: shadesOfOrange[index] }}>
+                {char}
+              </span>
+            ))}
+          </span>
         </div>
-      </div>
-
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
       </div>
     </section>
   );

@@ -7,9 +7,6 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -26,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt={title}
+          alt='web-development'
           className='w-16 h-16 object-contain'
         />
 
@@ -42,51 +39,22 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2
-          className={`${styles.sectionHeadText} font-bold`}
-          style={{ color: "#FF4500", fontSize: "40px" }}
-        >
-          Overview
-        </h2>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-[#FFFFFF] text-[17px] max-w-3xl leading-[30px]"
-        >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
-        </motion.p>
-      </div>
-      
-      <div className="mt-5 flex space-x-4">
-        <a
-          href="https://github.com/Ogieriakhi17"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="text-white hover:text-[#FF4500] transition-colors w-6 h-6"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/osaze-ogieriakhi-62114425b/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-white hover:text-[#FF4500] transition-colors w-6 h-6"
-          />
-        </a>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        I'm a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
+        Three.js. I'm a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life!
+      </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
