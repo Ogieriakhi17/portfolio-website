@@ -25,6 +25,13 @@ import {
     threejs,
   } from "../assets";
   
+  import usda from "../assets/usda.jpg"
+  import wnyaa from "../assets/wnyaa.jpeg"
+  import wsu_vcea from "../assets/company/wsu_vcea.jpeg"
+  import nsbe from "../assets/company/nsbe.png"
+  import travelbuddy from "../assets/travelbuddy.jpg"
+  import spreadsheet from "../assets/spreadsheet.jpg"
+
   export const navLinks = [
     {
       id: "about",
@@ -42,11 +49,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Software Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "AI Engineer",
       icon: mobile,
     },
     {
@@ -54,7 +61,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Data Engineer",
       icon: creator,
     },
   ];
@@ -116,11 +123,24 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Senator",
+      company_name: "National Society of Black Engineers WSU",
+      icon: nsbe,
+      iconBg: "#ffffff",
+      date: "August 2023 - present",
+      points: [
+        "Representing the interests of the National Society of Black Engineers (NSBE) chapter as Senator, collaborating with leadership and members to support organizational goals.",
+        "Working with diverse teams to plan and execute events, such as industry mixers and professional development workshops, fostering connections between students and industry professionals",
+        "Advocating for member concerns, ensuring their voices are heard in chapter decisions and promoting an inclusive and supportive environment.",
+        "Contributing to the growth of the chapter by strategizing initiatives to increase engagement and participation among members.",
+      ],
+    },
+    {
+      title: "Undergrad Teaching Assistant",
+      company_name: "WSU College of Engineering & Computer Science",
+      icon: wsu_vcea,
+      iconBg: "#9E1B32",
+      date: "August 2024 - December 2024",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,42 +149,29 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Technical Researcher",
+      company_name: "USDA",
+      icon: usda,
+      iconBg: "#ffffff",
+      date: "April 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Collaborated with interdisciplinary teams to analyze field experiment datasets and automate data processing workflows using Python and R.",
+        "Developing reusable tools and packages to streamline repetitive tasks, ensuring reliability and improving overall project workflows.",
+        "Contributing to team efforts by sharing technical expertise, fostering innovation, and maintaining clear communication across diverse project teams.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Near-Peer Mentor",
+      company_name: "Why Not You Academy",
+      icon: wnyaa,
+      iconBg: "#ffffff",
+      date: "September 2024 - present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mentoring high school students interested in computer science, providing guidance and support through their academic journey.",
+        "Assisting students with understanding key computing concepts and encouraging their interest in STEM fields.",
+        "Developing a supportive learning environment through one-on-one and group interactions, helping students build confidence and skills for future success",
+        
       ],
     },
   ];
@@ -198,51 +205,72 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "TravelBuddy",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to use aritficial intelligence to generate, manage, and save travel itineraries.",
       tags: [
         {
-          name: "react",
+          name: "AI",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "python",
           color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
         },
         {
           name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: travelbuddy,
+      source_code_link: "https://github.com/Ogieriakhi17/TravelBuddy/",
+    },
+    {
+      name: "Spreadsheet Application",
+      description:
+        "Mobile application that simulates that of a spreadshet application including formula calculation and cell coloring",
+      tags: [
+        {
+          name: "avalonia",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "c-sharp",
+          color: "green-text-gradient",
+        },
+        {
+          name: "logic engine",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: spreadsheet,
+      source_code_link: "https://github.com/Ogieriakhi17/Spreadsheet-Application/",
+    },
+    {
+      name: "ffff",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Portfolio Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A full responsive 3D website showcasing my portfolio.(you are on it right now😁).",
       tags: [
         {
           name: "nextjs",
