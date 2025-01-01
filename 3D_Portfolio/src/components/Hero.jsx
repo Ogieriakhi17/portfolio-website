@@ -3,15 +3,17 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import React, { useState, useEffect } from "react";
 
-const generateOrangeShades = (length) => {
+const generateBlueShades = (length) => {
   const shades = [];
   const maxShades = 100; // Prevent excessive shades
   const actualLength = Math.min(length, maxShades);
   for (let i = 0; i < actualLength; i++) {
-    const shade = Math.floor((255 / actualLength) * i);
-    shades.push(`rgb(255, ${shade}, 0)`);
+    const blue = 240 - Math.floor((240 / actualLength) * i);  // Fade from bright blue to lighter baby blue
+    const green = 207 - Math.floor((207 / actualLength) * i); // Fade from green to light green
+    shades.push(`rgb(137, ${green}, ${blue})`);
   }
   return shades;
+
 };
 
 const Hero = () => {
@@ -65,7 +67,7 @@ const Hero = () => {
     }
   };
 
-  const shadesOfOrange = generateOrangeShades(text.length);
+  const shadesOfBlue = generateBlueShades(text.length);
 
   return (
     <section className="relative w-full mx-auto bg-primary min-h-screen flex items-center justify-center px-4">
@@ -79,7 +81,7 @@ const Hero = () => {
             style={{ fontSize: "clamp(16px, 4.3vw, 32px)" }}
           >
             {text.split("").map((char, index) => (
-              <span key={index} style={{ color: shadesOfOrange[index] }}>
+              <span key={index} style={{ color: shadesOfBlue[index] }}>
                 {char}
               </span>
             ))}
