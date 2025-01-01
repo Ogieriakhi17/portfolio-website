@@ -26,6 +26,11 @@ import {
   import spreadsheet from "../assets/spreadsheet.jpg"
   import python from "../assets/tech/python.jpeg"
   import c from "../assets/tech/c.png"
+  import crimsoncode from "../assets/crimsoncode.jpg"
+  import bsu from "../assets/bsu.jpg"
+  import intramurals from "../assets/intermurals.png"
+  import nsbegroup from "../assets/nsbegroup.jpg"
+
   export const navLinks = [
     {
       id: "about",
@@ -286,27 +291,44 @@ import {
 
   const extracurriculars = [
     {
-      title: "Coding Club President",
-      description:
-        "Led a team of 30 members to organize hackathons, workshops, and peer coding sessions.",
-      image: git,
+      title: "WSU Black Student Union",
+      description: "Actively participating in fostering a supportive community for Black students by organizing cultural, educational, and social events to promote unity, awareness, and inclusion on campus.",
+      tags: [
+        { name: "Empowerment", color: "blue-text-gradient" },
+        { name: "Engagement", color: "green-text-gradient" },
+      ],
+      image: bsu,  
     },
     {
-      title: "Debate Team Member",
-      description: "Represented my university at national-level debate competitions.",
-      image: git,
+      title: "National Society of Black Engineers",
+      description: "Serving as a chapter senator, collaborating with peers to plan initiatives, attend conferences, and promote STEM opportunities for underrepresented communities, while enhancing leadership and networking skills.",
+      tags: [
+        { name: "Music", color: "pink-text-gradient" },
+        { name: "Guitar", color: "blue-text-gradient" },
+      ],
+      image: nsbegroup, 
     },
     {
-      title: "Community Volunteer",
-      description:
-        "Organized monthly clean-up drives and fundraising campaigns for local shelters.",
-      image: git,
+      title: "WSU Soccer Intramurals",
+      description: "Competing in intramural soccer leagues, showcasing teamwork, strategy, and dedication. Proudly led teams to victory, winning the championship four times.",
+      tags: [
+        { name: "Sports", color: "blue-text-gradient" },
+        { name: "Teamwork", color: "green-text-gradient" },
+      ],
+      image: intramurals,  
     },
     {
-      title: "Fitness Enthusiast",
-      description: "Participated in marathons and promoted wellness programs on campus.",
-      image: git,
+      title: "Crimson Code Hackathon",
+      description: "Actively participated in the Crimson Code Hackathon, collaborating with a team to develop innovative solutions under time constraints. Leveraged technical skills, creative problem-solving, and teamwork to design and implement a functional project, gaining valuable experience in real-world software development and innovation.",
+      tags: [
+        { name: "Coding", color: "pink-text-gradient" },
+        { name: "Collaboration", color: "blue-text-gradient" },
+      ],
+      image: crimsoncode, 
     },
+    
+
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects, extracurriculars };
