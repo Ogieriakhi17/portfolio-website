@@ -71,8 +71,8 @@ const Hero = () => {
     <section className="relative w-full mx-auto bg-primary min-h-screen flex items-center justify-center px-4">
       <div className="max-w-7xl mx-auto flex flex-col items-start gap-5">
         <div>
-          <h1 className="text-4xl md:text-6xl lg:text-8xl text-secondary">
-            Wagwan!!, I'm <span className="text-secondary">Osaze</span>
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-secondary font-bold">
+            Yooo!!, I'm <span className="text-secondary font-bold">Osaze</span>
           </h1>
           <span
             className="typing text-secondary"

@@ -4,7 +4,6 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -15,12 +14,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
     tripguide,
     threejs,
   } from "../assets";
@@ -31,7 +24,8 @@ import {
   import nsbe from "../assets/company/nsbe.png"
   import travelbuddy from "../assets/travelbuddy.jpg"
   import spreadsheet from "../assets/spreadsheet.jpg"
-
+  import python from "../assets/tech/python.jpeg"
+  import c from "../assets/tech/c.png"
   export const navLinks = [
     {
       id: "about",
@@ -44,6 +38,10 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "extracurriculars",
+      title: "Extracurriculars",
     },
   ];
   
@@ -72,16 +70,20 @@ import {
       icon: html,
     },
     {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "c++",
+      icon: c,
+    },
+    {
       name: "CSS 3",
       icon: css,
     },
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
     },
     {
       name: "React JS",
@@ -104,16 +106,8 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
@@ -273,11 +267,11 @@ import {
         "A full responsive 3D website showcasing my portfolio.(you are on it right now😁).",
       tags: [
         {
-          name: "nextjs",
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "three-js",
           color: "green-text-gradient",
         },
         {
@@ -286,8 +280,33 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
+    },
+  ];
+
+  const extracurriculars = [
+    {
+      title: "Coding Club President",
+      description:
+        "Led a team of 30 members to organize hackathons, workshops, and peer coding sessions.",
+      image: git,
+    },
+    {
+      title: "Debate Team Member",
+      description: "Represented my university at national-level debate competitions.",
+      image: git,
+    },
+    {
+      title: "Community Volunteer",
+      description:
+        "Organized monthly clean-up drives and fundraising campaigns for local shelters.",
+      image: git,
+    },
+    {
+      title: "Fitness Enthusiast",
+      description: "Participated in marathons and promoted wellness programs on campus.",
+      image: git,
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, extracurriculars };

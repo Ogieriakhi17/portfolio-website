@@ -7,6 +7,8 @@ import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
+import Extracurriculars from "./components/Extracurriculars";
+
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
+        <Extracurriculars/>
       </div>
       <div className='relative z-0'>
           <Contact />
