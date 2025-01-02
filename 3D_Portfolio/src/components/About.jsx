@@ -6,6 +6,10 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import resume from "../assets/resume.jpg";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -54,7 +58,36 @@ const About = () => {
         or building efficient systems, I’m committed to excellence and continuous learning. Explore my 
         journey and projects to see how I turn ideas into reality!
       </motion.p>
-
+      <div className="mt-5 flex space-x-4">
+        <a
+          href="https://github.com/Ogieriakhi17"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-white hover:text-[#FF4500] transition-colors w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/osaze-ogieriakhi-62114425b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-white hover:text-[#FF4500] transition-colors w-6 h-6"
+          />
+        </a>
+        <a
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-[#FF4500] transition-colors"
+        >
+          View Resume
+        </a>
+      </div>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

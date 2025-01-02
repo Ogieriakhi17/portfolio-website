@@ -41,13 +41,14 @@ import {
       title: "Work",
     },
     {
-      id: "contact",
-      title: "Contact",
-    },
-    {
       id: "extracurriculars",
       title: "Extracurriculars",
     },
+    {
+      id: "contact",
+      title: "Contact",
+    },
+   
   ];
   
   const services = [
@@ -246,9 +247,9 @@ import {
       source_code_link: "https://github.com/Ogieriakhi17/Spreadsheet-Application/",
     },
     {
-      name: "ffff",
+      name: "MAVen Data Workflow Automation",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Automated the workflow for processing MAVEn experiment data by developing reusable scripts and packaged functions. Streamlined data cleaning and analysis, improving efficiency and scalability in agricultural research.",
       tags: [
         {
           name: "nextjs",
