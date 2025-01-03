@@ -3,18 +3,8 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import React, { useState, useEffect } from "react";
 
-const generateBlueShades = (length) => {
-  const shades = [];
-  const maxShades = 100; // Prevent excessive shades
-  const actualLength = Math.min(length, maxShades);
-  for (let i = 0; i < actualLength; i++) {
-    const blue = 240 - Math.floor((240 / actualLength) * i);  // Fade from bright blue to lighter baby blue
-    const green = 207 - Math.floor((207 / actualLength) * i); // Fade from green to light green
-    shades.push(`rgb(137, ${green}, ${blue})`);
-  }
-  return shades;
 
-};
+import portVideo from "../assets/portvideo.mp4";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -22,17 +12,39 @@ const Hero = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
   const toRotate = [
-    "Comp Sci Student (unfortunately)",
-    "Avid fortnite player",
-    "",
-    "Comedian (my true passion)",
+    "Comp Sci Student (a blessing and a curse)",
+    "Avid Fortnite player",
+    "Keyboard warrior (literally, I write code)",
     "Botanical Garden",
     "High XP individual",
-    "Affa this website mad now??",
+    "Comedian (my true passion)",
     "🦅🦅🦅",
     "🤫🧏‍♂️",
+    "Professional procrastinator",
+    "cinnamon roll addict ☕ + coder = chaos",
+    "Dreaming of a bug-free day",
+    "Currently debugging life",
+    "Certified StackOverflow lurker",
+    "‘Hello World’ enthusiast",
+    "Ctrl + C, Ctrl + V magician 🪄",
+    "Future billionaire (trust me bro)",
+    "I do my own stunts (in code)",
+    "AI whisperer in training",
+    "Adding this to my GitHub readme",
+    "Pro gamer in my dreams",
+    "Full-time tiktok watcher, part-time coder",
+    "Sending packets like a boss",
+    "Turning caffeine into code",
+    "404: Witty comment not found",
+    "Meme curator and compiler",
+    "Half-human, half-debugger",
+    "Hacker vibes, but legally",
+    "Variable name innovator",
+    "GO COUGSSSSS",
+    "Lord of the Loops 🔁",
+    "Code so clean, it’s sparkling ✨",
   ];
-  const period = 1500;
+  const period = 1500; 
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -67,26 +79,49 @@ const Hero = () => {
     }
   };
 
-  const shadesOfBlue = generateBlueShades(text.length);
-
   return (
-    <section className="relative w-full mx-auto bg-primary min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-7xl mx-auto flex flex-col items-start gap-5">
-        <div>
-          <h1 className="text-4xl md:text-6xl lg:text-8xl text-secondary font-bold">
-            Yooo!!, I'm <span className="text-secondary font-bold">Osaze</span>
-          </h1>
-          <span
+    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={portVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
+
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      {/* Hero Content */}
+      <div className="relative z-10 text-center text-white">
+        <motion.h1
+          className="text-4xl md:text-6xl font-extrabold"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Hellooo, I'm <span className="text-gray-300">Osaze</span>
+        </motion.h1>
+        <span
             className="typing text-secondary"
             style={{ fontSize: "clamp(16px, 4.3vw, 32px)" }}
           >
             {text.split("").map((char, index) => (
-              <span key={index} style={{ color: shadesOfBlue[index] }}>
+              <span key={index} style={{ color: "white" }}>
                 {char}
               </span>
             ))}
           </span>
-        </div>
+
+        <motion.div
+          className="flex justify-center gap-4 mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+        >
+        </motion.div>
       </div>
     </section>
   );

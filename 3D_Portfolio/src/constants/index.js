@@ -26,10 +26,13 @@ import {
   import spreadsheet from "../assets/spreadsheet.jpg"
   import python from "../assets/tech/python.jpeg"
   import c from "../assets/tech/c.png"
-  import crimsoncode from "../assets/crimsoncode.jpg"
+  import crimsoncode from "../assets/hackathon.png"
   import bsu from "../assets/bsu.jpg"
   import intramurals from "../assets/intermurals.png"
   import nsbegroup from "../assets/nsbegroup.jpg"
+  import portfolio from "../assets/portfolio.jpg"
+  import rstudio from "../assets/rstudio.png"
+  import azure from "../assets/tech/azure.jpg"  
 
   export const navLinks = [
     {
@@ -82,6 +85,10 @@ import {
     {
       name: "c++",
       icon: c,
+    },
+    {
+      name: "azure",
+      icon: azure,
     },
     {
       name: "CSS 3",
@@ -142,10 +149,10 @@ import {
       iconBg: "#9E1B32",
       date: "August 2024 - December 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Assist in leading lab sessions, guiding students through complex data structure concepts and implementations.",
+        "Provide one-on-one and group tutoring to help students understand key topics",
+        "Grade assignments and exams, offering constructive feedback to help students improve their coding practices",
+        "Collaborate with the course instructor to ensure a seamless and effective learning experience for all students.",
       ],
     },
     {
@@ -264,7 +271,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: rstudio,
       source_code_link: "https://github.com/",
     },
     {
@@ -285,7 +292,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: portfolio,
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
     },
   ];
@@ -293,7 +300,7 @@ import {
   const extracurriculars = [
     {
       title: "WSU Black Student Union",
-      description: "Actively participating in fostering a supportive community for Black students by organizing cultural, educational, and social events to promote unity, awareness, and inclusion on campus.",
+      description: "I actively participate in fostering a supportive community for Black students by engaging in cultural, educational, and social events to promote unity, awareness, and inclusion on campus.",
       tags: [
         { name: "Empowerment", color: "blue-text-gradient" },
         { name: "Engagement", color: "green-text-gradient" },
@@ -302,7 +309,7 @@ import {
     },
     {
       title: "National Society of Black Engineers",
-      description: "Serving as a chapter senator, collaborating with peers to plan initiatives, attend conferences, and promote STEM opportunities for underrepresented communities, while enhancing leadership and networking skills.",
+      description: "I currently serve as a chapter senator, collaborating with peers to plan initiatives, attend conferences, and promote STEM opportunities for underrepresented communities, while enhancing leadership and networking skills.",
       tags: [
         { name: "Music", color: "pink-text-gradient" },
         { name: "Guitar", color: "blue-text-gradient" },
@@ -311,7 +318,7 @@ import {
     },
     {
       title: "WSU Soccer Intramurals",
-      description: "Competing in intramural soccer leagues, showcasing teamwork, strategy, and dedication. Proudly led teams to victory, winning the championship four times.",
+      description: "I compete in intramural soccer leagues, showcasing teamwork, strategy, and dedication. Winning the championship four times (I am not trying to brag... ok maybe a little😁).",
       tags: [
         { name: "Sports", color: "blue-text-gradient" },
         { name: "Teamwork", color: "green-text-gradient" },
@@ -320,7 +327,7 @@ import {
     },
     {
       title: "Crimson Code Hackathon",
-      description: "Actively participated in the Crimson Code Hackathon, collaborating with a team to develop innovative solutions under time constraints. Leveraged technical skills, creative problem-solving, and teamwork to design and implement a functional project, gaining valuable experience in real-world software development and innovation.",
+      description: "I repeatedly participate in the annual Crimson Code Hackathon, collaborating with a team to develop innovative solutions under time constraints. Leveraged technical skills, creative problem-solving, and teamwork to design and implement a functional project, gaining valuable experience in real-world software development and innovation.",
       tags: [
         { name: "Coding", color: "pink-text-gradient" },
         { name: "Collaboration", color: "blue-text-gradient" },

@@ -22,7 +22,7 @@ const ExtracurricularCard = ({ image, title, description }) => {
         alt={title}
         className="w-full h-full object-cover rounded-lg"
       />
-      <div className="absolute inset-0 flex flex-col justify-center items-center bg-blue-500 bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-500 bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300">
         <h4 className="text-white font-bold text-lg">{title}</h4>
         <span className="text-white mt-2 text-sm">{description}</span>
       </div>
@@ -34,7 +34,7 @@ const Extracurriculars = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>What I do out of school</p>
+        <p className={`${styles.sectionSubText}`}>What I also do</p>
         <h2 className={`${styles.sectionHeadText}`}>Additional Involvements.</h2>
       </motion.div>
 

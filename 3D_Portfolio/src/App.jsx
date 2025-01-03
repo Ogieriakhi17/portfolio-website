@@ -12,6 +12,7 @@ import Extracurriculars from "./components/Extracurriculars";
 
 const App = () => {
   return (
+    <div className="bg-primary text-tertiary min-h-screen">
     <BrowserRouter>
       <div>
         <Navbar />
@@ -22,7 +23,6 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
         <Extracurriculars/>
       </div>
       <div className='relative z-0'>
@@ -30,6 +30,7 @@ const App = () => {
       
         </div>
     </BrowserRouter>
+    </div>
   );
 };
 
