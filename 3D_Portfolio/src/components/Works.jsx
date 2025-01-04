@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
@@ -60,7 +61,7 @@ const Works = () => {
           real-world examples of my work.
         </motion.p>
       </div>
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-">
         {projects.length > 0 ? (
           projects.map((project, index) => <ProjectCard key={index} index={index} {...project} />)
         ) : (
@@ -71,4 +72,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default SectionWrapper(Works, "");

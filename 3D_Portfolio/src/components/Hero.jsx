@@ -94,7 +94,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hellooo, I'm <span className="text-gray-300">Osaze</span>
+          Hello, I'm <span className="text-gray-300">Osaze</span>
         </motion.h1>
         <span
             className="typing text-secondary"
