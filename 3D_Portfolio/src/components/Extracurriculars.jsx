@@ -11,12 +11,9 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
-
-
-
 const ExtracurricularCard = ({ image, title, description }) => {
   return (
-    <div className="relative overflow-hidden rounded-lg transition-transform duration-300 bg-gray-800 h-[500px] w-full flex flex-col justify-center items-center">
+    <div className="relative overflow-hidden rounded-lg transition-transform duration-300 bg-gray-800 h-[400px] sm:h-[500px] w-full flex flex-col justify-center items-center">
       <img
         src={image}
         alt={title}
@@ -38,10 +35,9 @@ const Extracurriculars = () => {
         <h2 className={`${styles.sectionHeadText}`}>Additional Involvements.</h2>
       </motion.div>
 
-      <div className="w-full h-[600px] py-16 px-4"> {/* Updated from w-full to w-screen */}
+      <div className="w-full py-16 px-4">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={2}
+          spaceBetween={20}
           loop={true}
           autoplay={{
             delay: 3000,
@@ -49,6 +45,11 @@ const Extracurriculars = () => {
           }}
           navigation={true}
           pagination={{ clickable: true }}
+          breakpoints={{
+            320: { slidesPerView: 1 }, // 1 slide on small screens
+            640: { slidesPerView: 1 }, // 1 slide on medium screens
+            1024: { slidesPerView: 2 }, // 2 slides on large screens
+          }}
           modules={[Navigation, Pagination, Autoplay]}
           className="extracurriculars-slider"
         >
@@ -66,6 +67,5 @@ const Extracurriculars = () => {
     </>
   );
 };
-
 
 export default SectionWrapper(Extracurriculars, "extracurriculars");
