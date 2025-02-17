@@ -12,10 +12,7 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    tripguide,
-    threejs,
   } from "../assets";
   
   import usda from "../assets/usda.jpg"
@@ -30,9 +27,12 @@ import {
   import bsu from "../assets/bsu.jpg"
   import intramurals from "../assets/intermurals.png"
   import nsbegroup from "../assets/nsbegroup.jpg"
-  import portfolio from "../assets/portfolio.jpg"
+  import portfolio from "../assets/portpic.png"
   import rstudio from "../assets/rstudio.png"
   import azure from "../assets/tech/azure.jpg"  
+  import hackronomics from "../assets/Hackanomics_logo.png"
+  import javagame from "../assets/javagame.png"
+  import hackdash from "../assets/hackdashboard.png"
 
   export const navLinks = [
     {
@@ -235,7 +235,7 @@ import {
     {
       name: "Spreadsheet Application",
       description:
-        "Mobile application that simulates that of a spreadshet application including formula calculation and cell coloring",
+        "Mobile application that simulates that of a spreadsheet application including formula calculation and cell coloring",
       tags: [
         {
           name: "avalonia",
@@ -254,25 +254,17 @@ import {
       source_code_link: "https://github.com/Ogieriakhi17/Spreadsheet-Application/",
     },
     {
-      name: "MAVen Data Workflow Automation",
+      name: "Java Ball Game",
       description:
-        "Automated the workflow for processing MAVEn experiment data by developing reusable scripts and packaged functions. Streamlined data cleaning and analysis, improving efficiency and scalability in agricultural research.",
+        "A game that where users track moving balls and try to tap them to gains points and achieve a highscore",
       tags: [
         {
-          name: "R",
+          name: "java",
           color: "blue-text-gradient",
         },
-        {
-          name: "python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "RStudio",
-          color: "pink-text-gradient",
-        },
       ],
-      image: rstudio,
-      source_code_link: "https://github.com/",
+      image: javagame,
+      source_code_link: "https://github.com/Ogieriakhi17/JavaBallGame.git",
     },
     {
       name: "Portfolio Website",
@@ -294,6 +286,48 @@ import {
       ],
       image: portfolio,
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
+    },
+    {
+      name: "Hackronomics",
+      description:
+        "An AI-driven finance tracking web app that helps users monitor expenses, manage budgets, and discover cost-effective alternatives using AI recommendations",
+      tags: [
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: hackdash,
+      source_code_link: "https://github.com/Ogieriakhi17/Hackronomics.git",
+    },
+    {
+      name: "MAVen Data Workflow Automation",
+      description:
+        "Automated the workflow for processing MAVEn experiment data by developing reusable scripts and packaged functions. Streamlined data cleaning and analysis, improving efficiency and scalability in agricultural research.",
+      tags: [
+        {
+          name: "R",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "RStudio",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: rstudio,
+      source_code_link: "https://github.com/",
     },
   ];
 

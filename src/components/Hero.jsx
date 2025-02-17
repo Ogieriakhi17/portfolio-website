@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import React, { useState, useEffect } from "react";
 
 
@@ -13,7 +11,6 @@ const Hero = () => {
   const [delta, setDelta] = useState(100);
   const toRotate = [
     "Comp Sci Student (a blessing and a curse)",
-    "Avid Fortnite player",
     "Keyboard warrior (literally, I write code)",
     "Dreaming of a bug-free day",
     "Currently debugging life",
@@ -23,6 +20,7 @@ const Hero = () => {
     "Future billionaire (trust me...)",
     "🦅🦅🦅",
     "I do my own stunts (in code)",
+    "Avid Fortnite player",
     "AI whisperer in training",
     "Adding this to my GitHub readme",
     "Pro gamer in my dreams",

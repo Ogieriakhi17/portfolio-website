@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import resume from "../assets/newresume.pdf";
+import resume from "../assets/resume.pdf";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
