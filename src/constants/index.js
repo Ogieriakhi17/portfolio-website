@@ -160,7 +160,7 @@ import {
       company_name: "WSU College of Engineering & Computer Science",
       icon: wsu_vcea,
       iconBg: "#9E1B32",
-      date: "August 2024 - December 2024",
+      date: "August 2024 - present",
       points: [
         "Assist in leading lab sessions, guiding students through complex data structure concepts and implementations.",
         "Provide one-on-one and group tutoring to help students understand key topics",
@@ -287,27 +287,7 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
     },
-    {
-      name: "Hackronomics",
-      description:
-        "An AI-driven finance tracking web app that helps users monitor expenses, manage budgets, and discover cost-effective alternatives using AI recommendations",
-      tags: [
-        {
-          name: "MongoDB",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "react",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: hackdash,
-      source_code_link: "https://github.com/Ogieriakhi17/Hackronomics.git",
-    },
+    /*
     {
       name: "MAVen Data Workflow Automation",
       description:
@@ -328,6 +308,28 @@ import {
       ],
       image: rstudio,
       source_code_link: "https://github.com/",
+    },
+    */
+    {
+      name: "Hackronomics",
+      description:
+        "An AI-driven finance tracking web app that helps users monitor expenses, manage budgets, and discover cost-effective alternatives using AI recommendations",
+      tags: [
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: hackdash,
+      source_code_link: "https://github.com/Ogieriakhi17/Hackronomics.git",
     },
   ];
 
