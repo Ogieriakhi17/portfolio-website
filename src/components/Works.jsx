@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -46,6 +46,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 };
 
 const Works = () => {
+  const [projectsData, setProjectsData] = useState([]);
+  
+  // Make sure projects data is loaded properly
+  useEffect(() => {
+    console.log("Projects data:", projects);
+    setProjectsData(projects || []);
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -61,15 +69,16 @@ const Works = () => {
           real-world examples of my work.
         </motion.p>
       </div>
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {projects.length > 0 ? (
-          projects.map((project, index) => <ProjectCard key={index} index={index} {...project} />)
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 min-h-screen">
+        {projectsData && projectsData.length > 0 ? (
+          projectsData.map((project, index) => <ProjectCard key={`project-${index}`} index={index} {...project} />)
         ) : (
-          <p>No projects to display</p>
+          <p className="text-white">Loading projects...</p>
         )}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+// Use a meaningful section ID
+export default SectionWrapper(Works, "projects");

@@ -33,6 +33,7 @@ import {
   import hackronomics from "../assets/Hackanomics_logo.png"
   import javagame from "../assets/javagame.png"
   import hackdash from "../assets/hackdashboard.png"
+  import sel from "../assets/sel.png"
 
   export const navLinks = [
     {
@@ -41,7 +42,11 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "Experience",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "extracurriculars",
@@ -134,7 +139,7 @@ import {
       company_name: "National Society of Black Engineers WSU",
       icon: nsbe,
       iconBg: "#ffffff",
-      date: "August 2023 - present",
+      date: "August 2023 - May 2025",
       points: [
         "Representing the interests of the National Society of Black Engineers (NSBE) chapter as Senator, collaborating with leadership and members to support organizational goals.",
         "Working with diverse teams to plan and execute events, such as industry mixers and professional development workshops, fostering connections between students and industry professionals",
@@ -160,7 +165,7 @@ import {
       company_name: "WSU College of Engineering & Computer Science",
       icon: wsu_vcea,
       iconBg: "#9E1B32",
-      date: "August 2024 - present",
+      date: "August 2024 - January 2025",
       points: [
         "Assist in leading lab sessions, guiding students through complex data structure concepts and implementations.",
         "Provide one-on-one and group tutoring to help students understand key topics",
@@ -179,6 +184,33 @@ import {
         "Assisting students with understanding key computing concepts and encouraging their interest in STEM fields.",
         "Developing a supportive learning environment through one-on-one and group interactions, helping students build confidence and skills for future success",
         
+      ],
+    },
+    {
+      title: "President",
+      company_name: "National Society of Black Engineers WSU",
+      icon: nsbe,
+      iconBg: "#ffffff",
+      date: "May 2025 - present",
+      points: [
+        "Preside over all general body meetings and executive board meetings.",
+        "Set the strategic vision for the organization and ensure alignment with NSBE national and regional goals.",
+        "Support and guide executive board members in their roles.",
+        "Represent the chapter to university officials, industry professionals, and other student organizations.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
+      company_name: "SEL",
+      icon: sel,
+      iconBg: "#04387d",
+      date: "May 2025 - present",
+      points: [
+        "Develop software that delights users and empowers Manufacturing",
+        "Understand hardware and software interactions in a test system", 
+        "Collaborate with product experts to understand requirements to design and build quality test solutions" ,
+        "Analyze test results, detect issues, and track root causes" ,
+        "Relentlessly improve the experience of your software users",
       ],
     },
   ];
@@ -287,29 +319,7 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
     },
-    /*
-    {
-      name: "MAVen Data Workflow Automation",
-      description:
-        "Automated the workflow for processing MAVEn experiment data by developing reusable scripts and packaged functions. Streamlined data cleaning and analysis, improving efficiency and scalability in agricultural research.",
-      tags: [
-        {
-          name: "R",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "RStudio",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: rstudio,
-      source_code_link: "https://github.com/",
-    },
-    */
+ 
     {
       name: "Hackronomics",
       description:
