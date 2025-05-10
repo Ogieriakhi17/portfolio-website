@@ -8,12 +8,14 @@ import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 import Extracurriculars from "./components/Extracurriculars";
-
+import Stars from "./components/canvas/Stars"
+import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => {
   return (
-    <div className="bg-primary text-tertiary min-h-screen">
+    <div className="bg-primary text-tertiary min-h-screen relative z-10">
     <BrowserRouter>
+    <StarsCanvas/>
       <div>
         <Navbar />
         <Hero />
@@ -21,14 +23,17 @@ const App = () => {
       <div>
         < About/>
         <Experience />
+        
         <Tech />
-        <Works />
-        <Extracurriculars/>
+        
+
       </div>
-      <div className='relative z-0'>
-          <Contact />
-      
-        </div>
+      <div className="relative z-0">
+      <Works />
+      <Extracurriculars/>
+        <Contact />
+        <StarsCanvas/>
+      </div>
     </BrowserRouter>
     </div>
   );
