@@ -22,15 +22,13 @@ const App = () => {
       </div>
       <div>
         < About/>
-        <Experience />
-        
-        <Tech />
-        
 
       </div>
-      <div className="relative z-0">
-      <Works />
-      <Extracurriculars/>
+      <div className="relative z-50">
+        <Experience />
+        <Tech />
+        <Works />
+        <Extracurriculars/>
         <Contact />
         <StarsCanvas/>
       </div>
