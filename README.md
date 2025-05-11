@@ -91,8 +91,7 @@ To set up this project locally, follow these steps:
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request. Please follow the [contribution guidelines](CONTRIBUTING.md) (if available).
-
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request. 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this project as per the terms of the license.
