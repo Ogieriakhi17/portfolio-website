@@ -52,12 +52,15 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-[#FFFFFF] text-[17px] max-w-3xl leading-[30px]"
         >
-        I’m a dedicated computer science student passionate about solving 
-        real-world challenges through innovative technology. With expertise in artificial intelligence, 
-        data structures, and software development, I thrive in dynamic environments where collaboration 
-        and creativity drive impactful solutions. Whether mentoring students, contributing to research, 
-        or building efficient systems, I’m committed to excellence and continuous learning. Explore my 
-        journey and projects to see how I turn ideas into reality!
+          I’m a software engineer passionate about building reliable, scalable systems that
+           solve real-world problems. I recently graduated with a degree in Computer Science 
+           and now work as an Associate Software Engineer, where I focus on designing and developing
+           reusable frontend platforms and production software.My interests span frontend engineering, 
+           developer tooling, and system design, and I enjoy working in collaborative environments where 
+           thoughtful engineering and clean architecture lead to impactful solutions. Whether I’m building 
+           shared component libraries, improving internal systems, or exploring new technologies, I’m driven 
+           by continuous learning and meaningful contribution. Explore my work to see how I approach problems, 
+           design solutions, and turn ideas into maintainable, real-world software.
         </motion.p>
       </div>
       <div className="mt-5 flex space-x-4">

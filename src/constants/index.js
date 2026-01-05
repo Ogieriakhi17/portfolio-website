@@ -152,7 +152,7 @@ import {
       company_name: "USDA",
       icon: usda,
       iconBg: "#ffffff",
-      date: "April 2024 - Present",
+      date: "April 2024 - May 2025",
       points: [
         "Collaborated with interdisciplinary teams to analyze field experiment datasets and automate data processing workflows using Python and R.",
         "Developing reusable tools and packages to streamline repetitive tasks, ensuring reliability and improving overall project workflows.",
@@ -165,7 +165,7 @@ import {
       company_name: "WSU College of Engineering & Computer Science",
       icon: wsu_vcea,
       iconBg: "#9E1B32",
-      date: "August 2024 - January 2025",
+      date: "August 2024 - December 2024",
       points: [
         "Assist in leading lab sessions, guiding students through complex data structure concepts and implementations.",
         "Provide one-on-one and group tutoring to help students understand key topics",
@@ -178,7 +178,7 @@ import {
       company_name: "Why Not You Academy",
       icon: wnyaa,
       iconBg: "#ffffff",
-      date: "September 2024 - present",
+      date: "September 2024 - April 2025",
       points: [
         "Mentoring high school students interested in computer science, providing guidance and support through their academic journey.",
         "Assisting students with understanding key computing concepts and encouraging their interest in STEM fields.",
@@ -191,7 +191,7 @@ import {
       company_name: "National Society of Black Engineers WSU",
       icon: nsbe,
       iconBg: "#ffffff",
-      date: "May 2025 - present",
+      date: "May 2025 - December 2025",
       points: [
         "Preside over all general body meetings and executive board meetings.",
         "Set the strategic vision for the organization and ensure alignment with NSBE national and regional goals.",
@@ -201,44 +201,27 @@ import {
     },
     {
       title: "Software Engineer Intern",
-      company_name: "SEL",
+      company_name: "Schweitzer Engineering Laboratories (SEL)",
       icon: sel,
       iconBg: "#04387d",
-      date: "May 2025 - present",
+      date: "May 2025 - December 2025",
       points: [
-        "Develop software that delights users and empowers Manufacturing",
-        "Understand hardware and software interactions in a test system", 
-        "Collaborate with product experts to understand requirements to design and build quality test solutions" ,
-        "Analyze test results, detect issues, and track root causes" ,
-        "Relentlessly improve the experience of your software users",
+        "Refactored distributed C++ and C#/.NET testing infrastructure into modular, independently deployable services, reducing end-to-end system test execution time by 35%.",
+        "Developed internal tooling to collect, aggregate, and visualize compilation and build metrics across distributed systems using REST APIs.",
+        "Collaborated with software, QA, and manufacturing engineers to diagnose system issues, improve test reliability, and support production environments."
       ],
     },
-  ];
-  
-  const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      title: "Associate Software Engineer",
+      company_name: "Schweitzer Engineering Laboratories (SEL)",
+      icon: sel,
+      iconBg: "#04387d",
+      date: "January 2026 - Present",
+      points: [
+        "Designing and developing a reusable React and TypeScript component library that serves as a shared frontend platform across SEL applications, improving UI consistency and development efficiency.",
+        "Collaborating closely with UX designers and frontend engineers to translate design systems and interaction specifications into scalable, accessible, and production-ready components.",
+        "Creating documentation, usage guidelines, and best practices to support cross-team adoption, reduce duplicated UI logic, and improve long-term maintainability of frontend systems."
+      ],
     },
   ];
   
@@ -319,7 +302,6 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
     },
- 
     {
       name: "Hackronomics",
       description:
@@ -385,4 +367,4 @@ import {
   ];
   
   
-  export { services, technologies, experiences, testimonials, projects, extracurriculars };
+  export { services, technologies, experiences, projects, extracurriculars };
