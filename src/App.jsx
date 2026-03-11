@@ -11,26 +11,22 @@ import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => {
   return (
-    <div className="bg-primary text-tertiary min-h-screen relative z-10">
-      <BrowserRouter>
-        {/* Top sections: no stars */}
-        <Navbar />
-        <Hero />
-        <About />
+    <div className="bg-primary text-tertiary min-h-screen relative">
+      {/* Full-page background. Keep it behind all content so it can't intercept clicks. */}
+      <StarsCanvas />
 
-        {/* Wrapper for star-covered sections */}
-        <div className="relative z-10">
-          {/* StarsCanvas behind everything below "About" */}
-          <StarsCanvas />
-
-          {/* Sections with stars background */}
+      <div className="relative z-10">
+        <BrowserRouter>
+          <Navbar />
+          <Hero />
+          <About />
           <Experience />
           <Tech />
           <Works />
           <Extracurriculars />
           <Contact />
-        </div>
-      </BrowserRouter>
+        </BrowserRouter>
+      </div>
     </div>
   );
 };
