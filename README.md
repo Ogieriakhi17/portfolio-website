@@ -21,6 +21,8 @@ This portfolio website is a dynamic and responsive single-page application desig
 - **Contact**: A form to reach out to me directly.
 
 The website is built with modern web technologies and is fully responsive, ensuring an optimal user experience on both desktop and mobile devices.
+![Website Hero](src/assets/portpic.png)
+![Project Section](src/assets/portpic2.png)
 
 ## Features
 
