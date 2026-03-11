@@ -30,10 +30,11 @@ import {
   import portfolio from "../assets/portpic.png"
   import rstudio from "../assets/rstudio.png"
   import azure from "../assets/tech/azure.jpg"  
-  import hackronomics from "../assets/Hackanomics_logo.png"
+  import goApi from "../assets/go_api.png"
   import javagame from "../assets/javagame.png"
   import hackdash from "../assets/hackdashboard.png"
   import sel from "../assets/sel.png"
+  import cryptowatch from "../assets/cryptowatch_dash_1.png"
 
   export const navLinks = [
     {
@@ -65,7 +66,7 @@ import {
       icon: web,
     },
     {
-      title: "AI Engineer",
+      title: "Fullstack Engineer",
       icon: mobile,
     },
     {
@@ -73,7 +74,7 @@ import {
       icon: backend,
     },
     {
-      title: "Data Engineer",
+      title: "Frontend Engineer",
       icon: creator,
     },
   ];
@@ -303,6 +304,27 @@ import {
       source_code_link: "https://github.com/Ogieriakhi17/portfolio-website/",
     },
     {
+      name: "GoLang ToDo API",
+      description:
+        "A production-style REST API built in Go using Gin, PostgreSQL, and JWT authentication. This project demonstrates backend engineering fundamentals including secure authentication, middleware, database integration, and clean architecture.",
+      tags: [
+        {
+          name: "RestAPI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Go",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Network",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: goApi,
+      source_code_link: "https://github.com/Ogieriakhi17/CryptoWatch.git",
+    },
+    {
       name: "Hackronomics",
       description:
         "An AI-driven finance tracking web app that helps users monitor expenses, manage budgets, and discover cost-effective alternatives using AI recommendations",
@@ -323,6 +345,27 @@ import {
       image: hackdash,
       source_code_link: "https://github.com/Ogieriakhi17/Hackronomics.git",
     },
+    {
+      name: "CryptoWatch",
+      description:
+        "CryptoWatch is a cryptocurrency monitoring terminal built with Next.js, TypeScript, and CoinGecko APIs, providing real-time market insights, trending assets, and detailed coin analytics through a fast, responsive dashboard interface.",
+      tags: [
+        {
+          name: "RestAPI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cryptowatch,
+      source_code_link: "https://github.com/Ogieriakhi17/CryptoWatch.git",
+    },
   ];
 
   const extracurriculars = [
@@ -337,7 +380,7 @@ import {
     },
     {
       title: "National Society of Black Engineers",
-      description: "I currently serve as a chapter senator, collaborating with peers to plan initiatives, attend conferences, and promote STEM opportunities for underrepresented communities, while enhancing leadership and networking skills.",
+      description: "I served as a chapter senator and president, collaborating with peers to plan initiatives, attend conferences, and promote STEM opportunities for underrepresented communities, while enhancing leadership and networking skills.",
       tags: [
         { name: "Music", color: "pink-text-gradient" },
         { name: "Guitar", color: "blue-text-gradient" },
@@ -354,7 +397,7 @@ import {
       image: intramurals,  
     },
     {
-      title: "Crimson Code Hackathon",
+      title: "Crimson Code Hackathons",
       description: "I repeatedly participate in the annual Crimson Code Hackathon, collaborating with a team to develop innovative solutions under time constraints. Leveraged technical skills, creative problem-solving, and teamwork to design and implement a functional project, gaining valuable experience in real-world software development and innovation.",
       tags: [
         { name: "Coding", color: "pink-text-gradient" },

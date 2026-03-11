@@ -9,7 +9,12 @@ import { SectionWrapper } from "../hoc";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", Math.min(index * 0.15, 0.6), 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -71,7 +76,9 @@ const Works = () => {
       </div>
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 min-h-screen">
         {projectsData && projectsData.length > 0 ? (
-          projectsData.map((project, index) => <ProjectCard key={`project-${index}`} index={index} {...project} />)
+          projectsData.map((project, index) => (
+            <ProjectCard key={project?.name ?? `project-${index}`} index={index} {...project} />
+          ))
         ) : (
           <p className="text-white">Loading projects...</p>
         )}
